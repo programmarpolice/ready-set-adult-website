@@ -21,3 +21,34 @@ header p {
   font-size: 1.2rem;
   margin-top: 10px;
 }
+
+/* Style the navigation bar */
+nav {
+  background-color: #5b8f8f;
+  padding: 10px 0;
+  border-bottom: 4px solid #89b0af;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #c8e2df;
+}
