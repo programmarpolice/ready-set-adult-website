@@ -173,8 +173,8 @@ nav a:hover {
 }
 
 .webinar-card {
-  background-color: #c4c66c;
-  color: #264653;
+  background-color: #3b7077;
+  color: white;
   border-radius: 10px;
   padding: 20px;
   width: 250px;
@@ -211,4 +211,70 @@ nav a:hover {
 
 #webinars-section button:hover {
   background-color: #b2d3d1;
+}
+
+/* Style the quizzes section */
+#quizzes-section {
+  padding: 60px 20px;
+  background-color: #c4c66c;
+  color: #264653;
+  text-align: center;
+}
+
+#quizzes-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#quizzes-section p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.quiz-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.quiz-card {
+  background-color: #b2d3d1;
+  color: #5b8f8f;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.quiz-card:hover {
+  transform: scale(1.05);
+}
+
+.quiz-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.quiz-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+#quizzes-section button {
+  background-color: #264653;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: background-color 0.3s;
+}
+
+#quizzes-section button:hover {
+  background-color: #5b8f8f;
 }
