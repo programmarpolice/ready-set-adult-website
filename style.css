@@ -85,3 +85,64 @@ nav a:hover {
 #home-content button:hover {
   background-color: #89b0af;
 }
+
+#games-section {
+  padding: 40px 20 px;
+  background-color: #b2d3d1;
+  color: #5b8f8f;
+  text-align: center;
+}
+
+#games-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.game-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.game-card {
+  background-color: #c8e2df;
+  border: 2px solid #5b8f8f;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.game-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.game-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.game-card button {
+  background-color: #5b8f8f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.game-card button:hover {
+  background-color: #89b0af;
+}
