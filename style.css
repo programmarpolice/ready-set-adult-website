@@ -52,3 +52,36 @@ nav a {
 nav a:hover {
   color: #c8e2df;
 }
+
+#home-content {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #c8e2df;
+  color: #5b8f8f;
+}
+
+#home-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#home-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+#home-content button {
+  background-color: #5b8f8f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#home-content button:hover {
+  background-color: #89b0af;
+}
