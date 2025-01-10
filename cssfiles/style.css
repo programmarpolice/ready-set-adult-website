@@ -212,7 +212,6 @@ nav a:hover {
 #webinars-section button:hover {
   background-color: #b2d3d1;
 }
-
 /* Style the quizzes section */
 #quizzes-section {
   padding: 60px 20px;
@@ -277,70 +276,6 @@ nav a:hover {
 
 #quizzes-section button:hover {
   background-color: #5b8f8f;
-}
-
-/* Style the contact section */
-#contact-section {
-  padding: 60px 20px;
-  background-color: #89b0af;
-  color: white;
-  text-align: center;
-}
-
-#contact-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-#contact-section p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
-#contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #5b8f8f;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #264653;
-  outline: none;
-}
-
-#contact-form button {
-  background-color: #264653;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#contact-form button:hover {
-  background-color: #3b7077;
 }
 
 /* Style the footer section */

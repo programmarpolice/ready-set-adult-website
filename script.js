@@ -9,9 +9,11 @@ document.querySelectorAll("nav a").forEach((link) => {
   });
 });
 
-//form submission alert
-document.getElementById("contact-form").addEventListener("submit", (event) => {
-  event.preventDefault(); // Prevent actual form submission
-  alert("Thank you for reaching out! We will get back to you soon.");
-  event.target.reset(); // Clear the form
-});
+const contactForm = document.getElementById("contact-form");
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault(); // Prevent actual form submission
+    alert("Thank you for reaching out! We will get back to you soon.");
+    event.target.reset(); // Clear the form
+  });
+}
