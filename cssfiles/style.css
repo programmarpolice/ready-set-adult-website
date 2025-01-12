@@ -29,8 +29,7 @@ nav {
   border-bottom: 4px solid #89b0af;
 }
 
-nav ul {
-  list-style-type: none;
+nav section {
   margin: 0;
   padding: 0;
   display: flex;
