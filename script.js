@@ -1,14 +1,36 @@
 // Function to load a page dynamically
 function loadPage(page) {
+  const loadingIndicator = document.getElementById("loading-indicator");
+  const contentContainer = document.getElementById("content");
+  loadingIndicator.style.display = "block"; //Show loading indicator
+
   fetch(page) // Fetch the HTML content of the page
-    .then((response) => response.text()) // Convert the response to text
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(
+          "Failes to load ${page}: ${response.status} ${response.statusText}"
+        );
+      }
+      return response.text(); // Convert the response to text
+    })
     .then((data) => {
       const parser = new DOMParser();
       const doc = parser.parseFromString(data, "text/html");
       const newContent = doc.getElementById("content");
       document.getElementById("content").innerHTML = newContent.innerHTML; // Replace current content
     })
-    .catch((error) => console.error("Error loading page:", error)); // Log any errors
+    .catch((error) => {
+      console.error("Error loading page:", error);
+      contentContainer.innerHTML = `
+      <div class="error-message">
+      <h2> Oops! Something went wrong. </h2>
+      <p> We couldn't load the page. Please try again later. </p>
+      </div>
+      `;
+    })
+    .finally(() => {
+      loadingIndicator.style.display = "none"; //Hide loading indicator
+    });
 }
 
 // Attach click event listeners to navigation links
