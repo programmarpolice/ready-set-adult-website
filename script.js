@@ -19,3 +19,15 @@ document.querySelectorAll("nav a").forEach((link) => {
     loadPage(page); // Call the loadPage function with the specified page
   });
 });
+
+// Smooth scroll for anchor links on the same page
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent the default jump behavior
+    const targetId = link.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
