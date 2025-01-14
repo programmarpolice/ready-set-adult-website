@@ -23,21 +23,30 @@ header p {
 }
 
 /* Style the navigation bar */
+/* Reset some default browser styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Style the navigation bar */
 nav {
   background-color: #5b8f8f;
   padding: 10px 0;
   border-bottom: 4px solid #89b0af;
 }
 
-nav section {
+nav ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
 nav li {
-  margin: 0 20px;
+  margin: 0;
 }
 
 nav a {
