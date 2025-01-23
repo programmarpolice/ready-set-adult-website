@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="cssfiles/webinars.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContactUs</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="webinars.html">Webinars</a></li>
+        <li><a href="quizzes.html">Quizzes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="content">
+      <header>
+        <h1>Welcome to the Webinar Center</h1>
+        <p>Learn financial foundations with our mentors.</p>
+      </header>
+      <div id="webinars-page">
+        <!-- Left-hand navigation bar -->
+        <aside id="sidebar">
+          <button class="sidebar-btn">Placeholder 1</button>
+          <button class="sidebar-btn">Placeholder 2</button>
+          <button class="sidebar-btn">Placeholder 3</button>
+          <button class="sidebar-btn">Calendar</button>
+        </aside>
+
+        <!-- Main content area -->
+        <main id="webinars-content">
+          <!-- Search field -->
+          <div id="search-container">
+            <input
+              type="text"
+              id="search-field"
+              placeholder="Search upcoming webinars..."
+            />
+            <ul id="search-suggestions"></ul>
+          </div>
+
+          <!-- Upcoming webinars section -->
+          <div id="webinar-list">
+            <!-- webinar boxes -->
+            <div class="webinar-box">
+              <img src="https://via.placeholder.com/150" alt="Webinar Image" />
+              <div class="webinar-info">
+                <h3>Budget Basics</h3>
+                <p>Date: Jan 20, 2025 | Time: 3:00 PM - 4:00 PM</p>
+                <p>Description: This is a brief description of the webinar.</p>
+              </div>
+            </div>
+
+            <div class="webinar-box">
+              <img src="https://via.placeholder.com/150" alt="Webinar Image" />
+              <div class="webinar-info">
+                <h3>Credit and Me</h3>
+                <p>Date: Jan 25, 2025 | Time: 1:00 PM - 2:30 PM</p>
+                <p>Description: This is a brief description of the webinar.</p>
+              </div>
+            </div>
+
+            <div class="webinar-box">
+              <img src="https://via.placeholder.com/150" alt="Webinar Image" />
+              <div class="webinar-info">
+                <h3>Investing and Me</h3>
+                <p>Date: Jan 25, 2025 | Time: 1:00 PM - 2:30 PM</p>
+                <p>Description: This is a brief description of the webinar.</p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
